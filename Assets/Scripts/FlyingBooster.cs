@@ -7,7 +7,7 @@ public class FlyingBooster : MonoBehaviour {
     float timeStarted = 0;
     Player player;
 
-    public float 
+    public float lastForSeconds = 0;
 
     void OnCollisionEnter2D(Collision2D coll) {
         var player = coll.gameObject.GetComponent<Player>();

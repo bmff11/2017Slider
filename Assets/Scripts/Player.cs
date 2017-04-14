@@ -22,7 +22,7 @@ public class Player : MonoBehaviour {
         }
 
     // Update is called once per frame
-    void FixedUpdate() {
+        void FixedUpdate() {
 
 
         float x = Input.GetAxisRaw("Horizontal");
@@ -45,7 +45,8 @@ public class Player : MonoBehaviour {
         }
 
     public void GetOut() {
-        _GM.SetLives( _GM.GetLives() - 1);
+        _GM.SetLives( _GM.GetLives() - 1 );
+        transform.position = startingPosition;
         Debug.Log("You're Out");
 
     }
